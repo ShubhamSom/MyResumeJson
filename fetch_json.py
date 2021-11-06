@@ -12,4 +12,8 @@ def fetch_json(url, *args, **kwargs):
     data = json.loads(data_str)  # load into json obj
     print(f'data:type:{type(data)}')
     pprint.pprint(data)
-fetch_json("https://raw.githubusercontent.com/ShubhamSom/MyResumeJson/main/resume.json?token=AJYPKJ4YBPHK2PA5YGK6YETBP3JF4")
+
+token = ""
+url = f"https://raw.githubusercontent.com/ShubhamSom/MyResumeJson/main/resume.json"
+print(url)
+fetch_json(url)
